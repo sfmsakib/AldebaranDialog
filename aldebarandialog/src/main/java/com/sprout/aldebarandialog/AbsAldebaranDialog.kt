@@ -140,10 +140,10 @@ abstract class AbsAldebaranDialog<Self: AbsAldebaranDialog<Self, T>, T: AbsAldeb
                 // cast to 'GradientDrawable'
                 background.setColor(topColor)
             }
-            is ColorDrawable -> {
-                // alpha value may need to be set again after this call
-                background.color = topColor
-            }
+//            is ColorDrawable -> {
+//                // alpha value may need to be set again after this call
+//                background.color = topColor
+//            }
         }
         return this as T
     }
