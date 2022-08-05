@@ -145,6 +145,7 @@ abstract class AbsAldebaranDialog<Self: AbsAldebaranDialog<Self, T>, T: AbsAldeb
 //                background.color = topColor
 //            }
 
+
         }
         return this as T
     }
