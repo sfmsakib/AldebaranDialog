@@ -37,7 +37,6 @@ abstract class AbsAldebaranDialog<Self: AbsAldebaranDialog<Self, T>, T: AbsAldeb
         titleView = findView<TextView>(R.id.ld_title)
         messageView = findView<TextView>(R.id.ld_message)
         topTitleView = findView<TextView>(R.id.ld_top_title)
-
     }
 
     @get:LayoutRes
