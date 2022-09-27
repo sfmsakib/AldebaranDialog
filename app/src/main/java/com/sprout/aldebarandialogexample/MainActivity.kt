@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("Yes") {}
             .setNegativeButtonColor(getColor(R.color.purple_200))
             .setPositiveButtonColor(getColor(com.sprout.aldebarandialog.R.color.pink500))
-            .setCancelable(false)
+            .setCancelable(true)
             .setTopTitle("Top Title!!")
             .setTitle("Title!!")
             .setMessage("Hello Aldebaran Dialog User!")
