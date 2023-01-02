@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             .setIcon(com.sprout.aldebarandialog.R.drawable.baseline_filter_vintage_24)
         errorDialog.show()
 
+
     }
 
 //    private fun showInfoDialog() {
