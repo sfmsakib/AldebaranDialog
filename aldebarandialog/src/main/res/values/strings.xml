@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ex_msg_dialog_view_not_set">Dialog View not set</string>
+    <string name="no_pending_authorization_needed">No Pending Authorization Needed</string>
+    <string name="icon">Icon</string>
+    <string name="app_name">Dialog</string>
+    <string name="error">Error</string>
+    <string name="top_title">Top Title</string>
+    <string name="ok">OK</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+</resources>

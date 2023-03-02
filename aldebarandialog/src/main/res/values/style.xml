@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ColorPrimaryOverlayGreen">
+        <item name="colorPrimary">@color/colorGreen</item>
+    </style>
+
+    <style name="ColorPrimaryOverlayBlue">
+        <item name="colorPrimary">@color/colorBlue</item>
+    </style>
+    <style name="ButtonStyleBlue" >
+        <item name="cornerRadius">5dp</item>
+        <item name="strokeColor">@color/blue</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="materialThemeOverlay">@style/ColorPrimaryOverlayBlue</item>
+    </style>
+    <style name="ButtonStyleGreen" >
+        <item name="cornerRadius">5dp</item>
+        <item name="strokeColor">@color/green</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="materialThemeOverlay">@style/ColorPrimaryOverlayGreen</item>
+    </style>
+
+    <style name="ColorPrimaryOverlayRed">
+        <item name="colorPrimary">@color/red</item>
+    </style>
+    <style name="ButtonStyleRed" >
+        <item name="cornerRadius">5dp</item>
+        <item name="strokeColor">@color/red</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="materialThemeOverlay">@style/ColorPrimaryOverlayRed</item>
+    </style>
+    <style name="RoundedDialog">
+        <item name="android:background">@drawable/dialog_btn_rounded</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="AlertDialog.AppCompat.CircleBackground">
+        <item name="android:background">@drawable/dialog_circle</item>
+    </style>
+</resources>

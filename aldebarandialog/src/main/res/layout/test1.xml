@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:paddingTop="10dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:visibility="visible"
+        android:id="@+id/mainLayout1">
+    </RelativeLayout>
+    <LinearLayout
+            android:background="@drawable/curved_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainLayout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/ld_color_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/curved_up"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="35dp"/>
+                <TextView
+                    android:id="@+id/ld_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/error"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ld_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/no_pending_authorization_needed"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+            <View
+                android:id="@+id/ld_color_areaa"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/view_green"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ld_top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/top_title"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/ld_ll_neutral"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:weightSum="1">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ld_btn_neutral"
+                    style="@style/ButtonStyleGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/ok" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ld_ll_yes_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ld_btn_no"
+                    style="@style/ButtonStyleRed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/no"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ld_btn_yes"
+                    style="@style/ButtonStyleGreen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/yes"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    <ImageView
+        android:id="@+id/ld_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/mainLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-35dp"
+        android:gravity="center"
+        android:src="@drawable/view_green"
+        android:contentDescription="@string/icon" />
+</RelativeLayout>
+
+
