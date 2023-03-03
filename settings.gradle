@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "AldebaranDialogExample"
 include ':app'
 include ':aldebarandialog'
+include ':library'
+
