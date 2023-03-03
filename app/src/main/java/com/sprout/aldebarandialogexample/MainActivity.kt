@@ -4,13 +4,15 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
+import android.widget.Button
 import com.sprout.aldebarandialog.AldebaranDialog
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val btnError = findViewById<Button>(R.id.btnError)
         btnError.setOnClickListener { showErrorDialog() }
 
 //        btnInfo.setOnClickListener { showInfoDialog() }

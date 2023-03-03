@@ -5,16 +5,19 @@ plugins {
 
 }
 group = 'com.github.sfmsakib'
-version = '1.0.1'
+version = '1.0.2'
 android {
     namespace 'com.sprout.aldebarandialog'
     compileSdk 33
 
     defaultConfig {
+        aarMetadata {
+            minCompileSdk = 21
+        }
         minSdk 21
         targetSdk 33
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -32,6 +35,25 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
+    }
+//    publishing {
+//        publications {
+//            maven(MavenPublication) {
+//                groupId = 'com.github.sfmsakib'
+//                artifactId = 'aldebarandialog'
+//                version = "1.0.2"
+//                from components.java
+//
+//                pom {
+//                    description = 'A description of my library'
+//                }
+//            }
+//        }
+//    }
 }
 
 dependencies {
@@ -44,31 +66,17 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.github.sfmsakib'
-                artifactId = 'aldebarandialog'
-                version = '1.0.1'
-            }
-        }
-    }
+//afterEvaluate {
 //    publishing {
 //        publications {
-//            maven(MavenPublication) {
-//                groupId = 'org.company'
-//                artifactId = 'sample'
-//                version = "0.9-SNAPSHOT"
-//                from components.java
-//
-//                pom {
-//                    description = 'A description of my library'
-//                    ...
-//                }
+//            // Creates a Maven publication called "release".
+//            release(MavenPublication) {
+//                from components.release
+//                groupId = 'com.github.sfmsakib'
+//                artifactId = 'aldebarandialog'
+//                version = '1.0.1'
 //            }
 //        }
 //    }
-}
+
+//}
