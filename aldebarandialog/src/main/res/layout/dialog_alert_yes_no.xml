@@ -110,7 +110,7 @@
                 android:paddingBottom="10dp"
                 android:weightSum="1">
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/ld_btn_neutral"
                     style="@style/ButtonStyleBlue"
                     android:layout_width="match_parent"
@@ -133,7 +133,7 @@
                 android:paddingBottom="10dp"
                 android:weightSum="2">
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/ld_btn_no"
                     style="@style/ButtonStyleRed"
                     android:layout_width="0dp"
@@ -146,7 +146,7 @@
                     android:textColor="@color/white"
                     android:visibility="invisible" />
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/ld_btn_yes"
                     style="@style/ButtonStyleGreen"
                     android:layout_width="0dp"
