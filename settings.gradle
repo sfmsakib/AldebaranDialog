@@ -13,7 +13,7 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "AldebaranDialogExample"
+rootProject.name = "AldebaranDialog"
 include ':app'
 include ':aldebarandialog'
 

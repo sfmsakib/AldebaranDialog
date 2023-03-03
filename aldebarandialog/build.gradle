@@ -4,20 +4,17 @@ plugins {
     id 'maven-publish'
 
 }
-group = 'com.github.sfmsakib'
-version = '1.0.2'
+//group = 'com.github.sfmsakib'
+//version = '1.0.2'
 android {
     namespace 'com.sprout.aldebarandialog'
     compileSdk 33
 
     defaultConfig {
-        aarMetadata {
-            minCompileSdk = 21
-        }
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -35,11 +32,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    publishing {
-        singleVariant('release') {
-            withSourcesJar()
-        }
-    }
+//    publishing {
+//        singleVariant('release') {
+//            withSourcesJar()
+//        }
+//    }
 //    publishing {
 //        publications {
 //            maven(MavenPublication) {
@@ -80,3 +77,19 @@ dependencies {
 //    }
 
 //}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.sfmsakib'
+                artifactId = 'AldebaranDialog'
+                version = '1.0.3'
+
+                afterEvaluate {
+                    from components.release
+                }
+            }
+        }
+    }
+}
+
