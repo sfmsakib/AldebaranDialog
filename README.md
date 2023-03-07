@@ -27,15 +27,15 @@ AldebaranDialog(
             .setNegativeButton("No") {}
             .setPositiveButton("Yes") {}
             .setNegativeButtonColor(getColor(R.color.purple_200))
-            .setPositiveButtonColor(getColor(com.sprout.aldebarandialog.R.color.pink500))
+            .setPositiveButtonColor(getColor(R.color.pink500))
             .setCancelable(true)
             .setTopTitle("Top Title!!")
             .setTitle("Title!!")
             .setMessage("Hello Aldebaran Dialog User!")
             .setTopColor(Color.parseColor("#A30000"))
             .setTopTitleColor(getColor(R.color.white))
-            .setTitleColor(getColor(com.sprout.aldebarandialog.R.color.red))
+            .setTitleColor(getColor(R.color.red))
             .setMessageGravity(Gravity.START)
             .setTitleGravity(Gravity.START)
-            .setIcon(com.sprout.aldebarandialog.R.drawable.baseline_filter_vintage_24)
+            .setIcon(R.drawable.icon)
 ```
