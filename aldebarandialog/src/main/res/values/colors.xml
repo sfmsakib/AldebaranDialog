@@ -9,15 +9,17 @@
     <color name="white">#FFFFFFFF</color>
     <color name="title">#919191</color>
     <color name="pink500">#E91E63</color>
-    <color name="colorPrimary">#e1e1e1</color>
+    <color name="colorPrimary">#E91E63</color>
     <color name="orange">#ff7f00</color>
     <color name="blue">#3498DB</color>
     <color name="red">#db3434</color>
     <color name="green">#00E676</color>
+
     <color name="colorGreen">#4CAF50</color>
+    <color name="colorRed">#B20020</color>
+    <color name="colorBlue">#1233AA</color>
 
     <color name="color_list_title">#818181</color>
     <color name="color_list_value">#000000</color>
-    <color name="colorBlue">#1233AA</color>
     <color name="grey">#616161</color>
 </resources>

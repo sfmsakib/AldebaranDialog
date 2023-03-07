@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 //
 //        btnSuccess.setOnClickListener { showSuccessDialog() }
     }
-    lateinit var errorDialog: AldebaranDialog
+    private lateinit var errorDialog: AldebaranDialog
 
     private fun showErrorDialog() {
         errorDialog = AldebaranDialog(
@@ -33,13 +33,13 @@ class MainActivity : AppCompatActivity() {
             AldebaranDialog.ButtonLayout.HORIZONTAL)
             .setNegativeButton("No") {}
             .setPositiveButton("Yes") {}
-            .setPositiveButtonColor(getColor(R.color.white))
-            .setNegativeButtonColor(getColor(R.color.white))
+            .setNegativeButtonColor(getColor(R.color.purple_200))
+            .setPositiveButtonColor(getColor(com.sprout.aldebarandialog.R.color.pink500))
             .setCancelable(false)
             .setTopTitle("Top Title!!")
             .setTitle("Title!!")
-            .setMessage("Text Message!!")
-            .setTopColor(Color.parseColor("#B20020"))
+            .setMessage("Hello Aldebaran Dialog User!")
+            .setTopColor(Color.parseColor("#A30000"))
             .setTopTitleColor(getColor(R.color.white))
             .setTitleColor(getColor(com.sprout.aldebarandialog.R.color.red))
             .setMessageGravity(Gravity.START)

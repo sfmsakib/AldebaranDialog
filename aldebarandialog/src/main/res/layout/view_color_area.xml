@@ -14,6 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:src="@drawable/baseline_filter_vintage_24"
         tools:ignore="ContentDescription" />
 
     <TextView
@@ -23,6 +24,7 @@
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:textSize="18sp"
-        android:visibility="gone" />
+        android:text="@string/app_name"
+        android:visibility="visible" />
 
 </LinearLayout>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="15dp"
     android:paddingTop="15dp"
     android:paddingStart="20dp"
@@ -24,30 +24,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/ld_color_area"
-                android:gravity="center"
-                android:background="@drawable/curved_up"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="35dp"/>
-                <TextView
-                    android:id="@+id/ld_top_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginEnd="10dp"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
+            <include layout="@layout/view_color_area_icon_flow"/>
             <LinearLayout
                 android:id="@+id/ld_color_area_curve"
                 android:layout_width="match_parent"
@@ -76,29 +53,8 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/ld_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:visibility="visible" />
-                <TextView
-                    android:id="@+id/ld_message"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:textColor="@color/black"
-                    android:textSize="14sp" />
 
-            </LinearLayout>
+            <include layout="@layout/view_title_and_message"/>
 
             <LinearLayout
                 android:id="@+id/ld_ll_neutral"
@@ -112,13 +68,16 @@
 
                 <Button
                     android:id="@+id/ld_btn_neutral"
-                    style="@style/ButtonStyleBlue"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@color/colorBlue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_weight="2"
+                    android:minHeight="36dp"
                     android:gravity="center"
+                    android:textColor="@color/white"
                     android:text="OK" />
 
             </LinearLayout>
@@ -135,24 +94,28 @@
 
                 <Button
                     android:id="@+id/ld_btn_no"
-                    style="@style/ButtonStyleRed"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@color/colorRed"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="6dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="No"
+                    android:minHeight="36dp"
                     android:textColor="@color/white"
                     android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/ld_btn_yes"
-                    style="@style/ButtonStyleGreen"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@color/colorGreen"
                     android:layout_width="0dp"
+                    android:minHeight="36dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="12dp"
                     android:layout_weight="1"
                     android:text="Yes"
                     android:visibility="invisible"

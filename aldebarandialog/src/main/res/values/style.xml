@@ -15,6 +15,11 @@
         <item name="android:padding">2dp</item>
         <item name="materialThemeOverlay">@style/ColorPrimaryOverlayBlue</item>
     </style>
+    <style name="Button.color" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="colorPrimary">@color/colorBlue</item>
+
+    </style>
     <style name="ButtonStyleGreen" >
         <item name="cornerRadius">5dp</item>
         <item name="strokeColor">@color/green</item>

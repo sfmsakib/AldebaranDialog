@@ -118,17 +118,17 @@ class AldebaranDialog : AbsAldebaranDialog<AldebaranDialog, AldebaranDialog> {
     }
 
     fun setPositiveButtonColor(@ColorInt color: Int): AldebaranDialog {
-        positiveButton!!.setTextColor(color)
+        positiveButton!!.background.setTint(color)
         return this
     }
 
     fun setNegativeButtonColor(@ColorInt color: Int): AldebaranDialog {
-        negativeButton!!.setTextColor(color)
+        negativeButton!!.background.setTint(color)
         return this
     }
 
     fun setNeutralButtonColor(@ColorInt color: Int): AldebaranDialog {
-        neutralButton!!.setBackgroundColor(color)
+        neutralButton!!.background.setTint(color)
         return this
     }
 
