@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="40dp"
+    android:orientation="vertical"
     android:layout_height="match_parent">
     <Button
         android:id="@+id/btnError"
@@ -9,21 +12,21 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="5dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="#bf1313"
         android:text="Aldebaran Dialog"
         android:textColor="#fff" />
 
     <Button
-        android:id="@+id/btnInfo"
+        android:id="@+id/btnCustom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnError"
         android:layout_marginEnd="5dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#0861ce"
-        android:text="Info Dialog"
+        android:backgroundTint="@color/colorBlue"
+        android:text="Custom Dialog"
         android:textColor="#fff" />
 
     <Button
@@ -76,4 +79,4 @@
         android:textColor="#fff" />
 
 
-</RelativeLayout>
+</LinearLayout>

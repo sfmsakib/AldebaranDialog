@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.Button
+import com.sprout.aldebarandialog.AldebaranCustomDialog
 import com.sprout.aldebarandialog.AldebaranDialog
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         val btnError = findViewById<Button>(R.id.btnError)
         btnError.setOnClickListener { showErrorDialog() }
 
-//        btnInfo.setOnClickListener { showInfoDialog() }
+        val btnCustom = findViewById<Button>(R.id.btnCustom)
+        btnCustom.setOnClickListener { showCustomDialog() }
 //
 //        btnProgress.setOnClickListener { showProgressDialog() }
 //
@@ -25,6 +27,13 @@ class MainActivity : AppCompatActivity() {
 //
 //        btnSuccess.setOnClickListener { showSuccessDialog() }
     }
+
+    private fun showCustomDialog() {
+        AldebaranCustomDialog(this)
+            .setView(R.layout.custom_layout)
+            .show()
+    }
+
     private lateinit var errorDialog: AldebaranDialog
 
     private fun showErrorDialog() {
