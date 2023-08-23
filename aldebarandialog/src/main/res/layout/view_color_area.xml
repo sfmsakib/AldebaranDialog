@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:paddingBottom="24dp"
     android:paddingTop="24dp"
+    android:background="@color/red"
     tools:ignore="UseCompoundDrawables">
 
     <ImageView
@@ -24,6 +25,7 @@
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:text="@string/app_name"
         android:visibility="visible" />
 

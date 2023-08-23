@@ -18,6 +18,7 @@ dependencies {
 ```
 
 #### AldebaranDialog
+Basic Aldebaran Dialog:
 You can configure positive and/or negative or neutral button. Each button can have its own listener set, or all three can share one listener. Alternatively, no listener can be set at all, in which case clicking any button will simply dismiss the dialog.
 ##
 ```Kotlin
@@ -38,4 +39,18 @@ AldebaranDialog(
             .setMessageGravity(Gravity.START)
             .setTitleGravity(Gravity.START)
             .setIcon(R.drawable.icon)
+```
+#### AldebaranDialog
+Aldebaran Progress Dialog:
+To show progress dialog:
+##
+```Kotlin
+        AldebaranProgressDialog(this)
+            .setCancelable(true)
+            .setTitle("Please wait!!")
+            .setMessage("Uploading your data...")
+            .setTopTitle("Data Uploading")
+            .setIcon(com.sprout.aldebarandialog.R.drawable.baseline_cloud_upload_24)
+            .setTopColor(getColor(R.color.purple_200))
+            .show()
 ```

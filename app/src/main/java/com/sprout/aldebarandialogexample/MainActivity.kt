@@ -7,6 +7,7 @@ import android.view.Gravity
 import android.widget.Button
 import com.sprout.aldebarandialog.AldebaranCustomDialog
 import com.sprout.aldebarandialog.AldebaranDialog
+import com.sprout.aldebarandialog.AldebaranProgressDialog
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,9 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         val btnCustom = findViewById<Button>(R.id.btnCustom)
         btnCustom.setOnClickListener { showCustomDialog() }
-//
-//        btnProgress.setOnClickListener { showProgressDialog() }
-//
+
+        val btnProgress = findViewById<Button>(R.id.btnProgress)
+        btnProgress.setOnClickListener { showProgressDialog() }
+
 //        btnWarning.setOnClickListener { showWarningDialog() }
 //
 //        btnNotice.setOnClickListener { showNoticeDialog() }
@@ -62,11 +64,18 @@ class MainActivity : AppCompatActivity() {
 //    private fun showInfoDialog() {
 //        AwesomeInfoDialog(this).setPositiveButtonText(getString(R.string.dialog_ok_button), false).show()
 //    }
-//
-//    private fun showProgressDialog() {
-//        AwesomeProgressDialog(this).show()
-//    }
-//
+
+    private fun showProgressDialog() {
+        AldebaranProgressDialog(this)
+            .setCancelable(true)
+            .setTitle("Please wait!!")
+            .setMessage("Uploading your data...")
+            .setTopTitle("Data Uploading")
+            .setIcon(com.sprout.aldebarandialog.R.drawable.baseline_cloud_upload_24)
+            .setTopColor(getColor(R.color.purple_200))
+            .show()
+    }
+
 //    private fun showWarningDialog() {
 //        AwesomeWarningDialog(this).setButtonText(getString(R.string.dialog_ok_button)).show()
 //    }
