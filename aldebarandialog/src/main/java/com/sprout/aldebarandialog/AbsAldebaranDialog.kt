@@ -144,7 +144,6 @@ abstract class AbsAldebaranDialog<Self: AbsAldebaranDialog<Self, T>, T: AbsAldeb
 //                // alpha value may need to be set again after this call
 //                background.color = topColor
 //            }
-
         }
         return this as T
     }
@@ -152,6 +151,7 @@ abstract class AbsAldebaranDialog<Self: AbsAldebaranDialog<Self, T>, T: AbsAldeb
     fun setTopColorRes(@ColorRes topColoRes: Int): T {
         return setTopColor(color(topColoRes))
     }
+
     /*
      * You should call method saveInstanceState on handler object and then use saved info to restore
      *  your dialog in onRestoreInstanceState. Static methods wasDialogOnScreen and getDialogId will

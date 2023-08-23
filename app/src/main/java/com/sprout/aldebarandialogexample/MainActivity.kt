@@ -1,5 +1,6 @@
 package com.sprout.aldebarandialogexample
 
+import android.app.Dialog
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,9 +32,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showCustomDialog() {
-        AldebaranCustomDialog(this)
+        var customDialog: AldebaranCustomDialog? = null
+        customDialog = AldebaranCustomDialog(this)
             .setView(R.layout.custom_layout)
-            .show()
+            .configureView() {
+                val btn = it?.findViewById<Button>(R.id.button)
+                btn?.setOnClickListener {
+                    customDialog?.dismiss()
+                }
+            }
+        customDialog.show()
     }
 
     private lateinit var errorDialog: AldebaranDialog
